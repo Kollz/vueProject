@@ -54,7 +54,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style>

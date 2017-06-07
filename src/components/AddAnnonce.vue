@@ -74,3 +74,7 @@
 			</form>
 		</div>
 	</template>
+
+	<script>
+		import addAnnonce from '../addAnnonce';
+	</script>

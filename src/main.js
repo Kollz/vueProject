@@ -3,13 +3,11 @@
 import Vue 			from 'vue'
 import App 			from './App'
 import Home 		from './components/Home'
-import TimeEntries 	from './components/TimeEntries'
 import Inscription 	from './components/Inscription'
 import VisuAnnonce	from './components/VisuAnnonce'
 import AddAnnonce	from './components/AddAnnonce'
 import Annuaire		from './components/Annuaire'
 import Profile		from './components/Profile'
-import LogTime 		from './components/LogTime'
 
 import VueRouter 	from 'vue-router'
 import VueResource 	from 'vue-resource'
@@ -26,14 +24,6 @@ const router = new VueRouter({
 		{ path: '/addAnnonce', component: AddAnnonce},
 		{ path: '/annuaire', component: Annuaire},
 		{ path: '/profile', component: Profile},
-		{ path: '/time-entries', component: TimeEntries,
-			children: [
-				{
-					path: 'log-time',
-					component: LogTime
-				}
-			]
-		},
 		{ path: '*', redirect: '/home'}
 	],
 	mode: 'history' 
